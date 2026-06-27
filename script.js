@@ -4942,7 +4942,7 @@ const characters = [
 
   icon: "https://i.imgur.com/dqvYAek.png",
 
-  affiliation: "Roars of Dawn",
+  affiliation: "[Roars of Dawn]",
   grade: "Epic",
   attribute: "VIT",
   type: "Tank",
@@ -5144,7 +5144,7 @@ const characters = [
 
   icon: "https://i.imgur.com/COFUR0u.png",
 
-  affiliation: "Roars of Dawn",
+  affiliation: "[Roars of Dawn]",
   grade: "Epic",
   attribute: "STR",
   type: "DPS",
