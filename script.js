@@ -3497,7 +3497,7 @@ const characters = [
 
   icon: "https://i.imgur.com/864vtZQ.png",
 
-  affiliation: "Knight of Danafor",
+  affiliation: "Kingdom of Danafor",
   grade: "Legendary",
   attribute: "VIT",
   type: "Support",
