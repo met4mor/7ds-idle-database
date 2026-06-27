@@ -1560,7 +1560,7 @@ const characters = [
 
   icon: "https://i.imgur.com/GSyyIHh.png",
 
-  affiliation: "[The Seven Deadly Sins], Transform!",
+  affiliation: "[Seven Deadly Sins], Transform!",
   grade: "Legendary",
   attribute: "INT",
   type: "DPS",
