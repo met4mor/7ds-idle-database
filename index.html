@@ -1,1 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7DS Idle Database</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<h1>Seven Deadly Sins: Idle Adventure Database</h1>
+<footer>
+  Created & maintained by <strong>met4mor</strong>
+</footer>
+
+<div class="filters">
+  <input id="searchInput" type="text" placeholder="Search character...">
+
+  <select id="attributeFilter">
+    <option value="">All Attributes</option>
+    <option value="STR">STR</option>
+    <option value="DEX">DEX</option>
+    <option value="INT">INT</option>
+    <option value="VIT">VIT</option>
+  </select>
+
+  <select id="typeFilter">
+    <option value="">All Types</option>
+    <option value="DPS">DPS</option>
+    <option value="Support">Support</option>
+    <option value="Tank">Tank</option>
+    <option value="Debuffer">Debuffer</option>
+  </select>
+
+<select id="affiliationFilter">
+  <option value="">All Affiliations</option>
+
+  <option value="Ancient Demon">Ancient Demon</option>
+  <option value="Another Side of the [Ten Commandments]">Another Side of the [Ten Commandments]</option>
+  <option value="Awaken, [Seven Deadly Sins]">Awaken, [Seven Deadly Sins]</option>
+  <option value="Beard of the Mountain Cat">Beard of the Mountain Cat</option>
+  <option value="Britannia's Wildlife">Britannia's Wildlife</option>
+  <option value="Camelot">Camelot</option>
+  <option value="Chess Pieces">Chess Pieces</option>
+  <option value="Druids of Istal">Druids of Istal</option>
+  <option value="Fairy King's Forest">Fairy King's Forest</option>
+  <option value="Giant Warriors">Giant Warriors</option>
+  <option value="Goddess Warrior">Goddess Warrior</option>
+  <option value="Guardians of Liones">Guardians of Liones</option>
+  <option value="Guardians of the Forest">Guardians of the Forest</option>
+  <option value="Knight of Danafor">Knight of Danafor</option>
+  <option value="Liones Holy Knight">Liones Holy Knight</option>
+  <option value="Liones's Hero">Liones's Hero</option>
+  <option value="Ordan Village">Ordan Village</option>
+  <option value="Purgatory">Purgatory</option>
+  <option value="Seed of Betrayal">Seed of Betrayal</option>
+  <option value="Sky Temple Protectors">Sky Temple Protectors</option>
+  <option value="Spirits">Spirits</option>
+  <option value="Swallowed By Darkness">Swallowed By Darkness</option>
+  <option value="The Four Archangels">The Four Archangels</option>
+  <option value="Traces of the Demons">Traces of the Demons</option>
+  <option value="Transcendent [Seven Deadly Sins]">Transcendent [Seven Deadly Sins]</option>
+  <option value="Undead">Undead</option>
+  <option value="Vaizel">Vaizel</option>
+  <option value="Vampires of Edinburgh">Vampires of Edinburgh</option>
+  <option value="Werebeasts">Werebeasts</option>
+  <option value="Weird Fangs">Weird Fangs</option>
+
+  <option value="[Boar Hat] Tavern">[Boar Hat] Tavern</option>
+  <option value="[Roars of Dawn]">[Roars of Dawn]</option>
+  <option value="[Seven Catastrophes]">[Seven Catastrophes]</option>
+  <option value="[Seven Deadly Sins], Transform!">[Seven Deadly Sins], Transform!</option>
+  <option value="[The Pleiades of the Azure Sky]">[The Pleiades of the Azure Sky]</option>
+  <option value="[The Seven Deadly Sins]">[The Seven Deadly Sins]</option>
+  <option value="[The Six Knights of Black]">[The Six Knights of Black]</option>
+  <option value="[The Ten Commandments]">[The Ten Commandments]</option>
+</select>
+
+<select id="gradeFilter">
+  <option value="">All Grades</option>
+  <option value="Basic">Basic</option>
+  <option value="Normal">Normal</option>
+  <option value="Rare">Rare</option>
+  <option value="Epic">Epic</option>
+  <option value="Unique">Unique</option>
+  <option value="Legendary">Legendary</option>
+  <option value="Transcendence">Transcendence</option>
+</select>
+
+<button id="aboutBtn">❓ About Project</button>
+<button id="pveTierBtn">⚔️ PvE Tier List</button>
+<button id="pvpTierBtn">🏆 PvP Tier List</button>
+
+</div>
+
+<div id="characterGrid" class="character-grid"></div>
+
+<div id="aboutModal" class="popup hidden">
+  <div class="popup-content">
+    <span class="close" id="closeAbout">×</span>
+
+    <h2>❓ About Project</h2>
+
+    <div class="info-box">
+      <p><b>Creator:</b> met4mor</p>
+      <p><b>Database Version:</b> 1.0</p>
+    </div>
+
+    <p>
+      ❗ Hi! I'm <b>met4mor</b>.
+    </p>
+
+    <p>
+      I created this database to collect every character from
+      <b>Seven Deadly Sins: Idle Adventure</b> in one clean and easy-to-use place.
+    </p>
+
+    <p>
+      Every character, skill, affiliation, grade, attribute, type and recommended potential
+      has been manually collected and added to the database.
+    </p>
+
+    <p>
+      This project will keep growing with future updates, new characters and new features.
+    </p>
+
+    <p>
+      Thanks for using the database!
+    </p>
+
+    <hr>
+
+    <p style="font-size: 13px; opacity: 0.7;">
+      Seven Deadly Sins: Idle Adventure and all related assets belong to their respective owners.
+    </p>
+  </div>
+</div>
+<div id="pveTierModal" class="popup hidden">
+  <div class="popup-content tierlist-popup">
+    <span class="close" id="closePveTier">×</span>
+
+    <h2>⚔️ PvE Tier List</h2>
+
+    <img
+      src="https://i.imgur.com/1Fqthkk.png"
+      alt="PvE Tier List"
+      class="tierlist-image"
+    >
+  </div>
+</div>
+<div id="pvpTierModal" class="popup hidden">
+  <div class="popup-content tierlist-popup">
+    <span class="close" id="closePvpTier">×</span>
+
+    <h2>🏆 PvP Tier List</h2>
+
+    <img
+      src="https://i.imgur.com/RajJyaX.png"
+      alt="PvP Tier List"
+      class="tierlist-image"
+    >
+  </div>
+</div>
+
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">×</span>
+
+    <h2 id="charName"></h2>
+
+    <div class="info-box">
+      <p><b>Affiliation:</b> <span id="charAffiliation"></span></p>
+      <p><b>Grade:</b> <span id="charGrade"></span></p>
+      <p><b>Attribute / Type:</b> <span id="charAttributeType"></span></p>
+<p><b>Recommended Potential:</b> <span id="charPotential"></span></p>
+    </div>
+
+    <div id="skillsContainer"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
