@@ -1,1 +1,263 @@
+body {
+  background: #10101c;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 25px;
+}
 
+h1 {
+  text-align: center;
+  color: #ffcc66;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+input,
+select {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #1d1d35;
+  color: white;
+}
+
+#aboutBtn,
+#pveTierBtn,
+#pvpTierBtn {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: white;
+  color: #10101c;
+  cursor: pointer;
+  font-weight: bold;
+  min-width: 150px;
+  height: 44px;
+  box-sizing: border-box;
+  transition: 0.2s;
+}
+
+#aboutBtn:hover,
+#pveTierBtn:hover,
+#pvpTierBtn:hover {
+  background: #f0f0f0;
+}
+
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 18px;
+}
+
+.character-card {
+  background: #1d1d35;
+  padding: 15px;
+  border-radius: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+  border: 2px solid #333355;
+  box-shadow: 0 0 15px rgba(255, 204, 102, 0.12);
+}
+
+.character-card:hover {
+  transform: scale(1.04);
+}
+
+
+
+.grade-Transcendence {
+  border: 2px solid transparent;
+  background:
+    linear-gradient(#1d1d35, #1d1d35) padding-box,
+    linear-gradient(135deg, #89f7fe, #66a6ff, #c084fc, #f472b6, #fde68a) border-box;
+  box-shadow: 0 0 18px rgba(192, 132, 252, 0.45);
+}
+
+.grade-Legendary {
+  border-color: #ffd700;
+}
+
+.grade-Unique {
+  border-color: #ff6a00;
+}
+
+.grade-Epic {
+  border-color: #c084fc;
+}
+
+.grade-Rare {
+  border-color: #245FBF;
+}
+
+.grade-Normal {
+  border-color: #145A32;
+}
+
+.grade-Basic {
+  border-color: #5C4033;
+}
+
+
+.character-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.character-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.affiliation-badge {
+  display: inline-block;
+  background: #322a55;
+  color: #cdb8ff;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+/* TIER COLORS */
+
+.tier {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.tier-SS {
+  color: #ffd700;
+  text-shadow:
+    0 0 5px rgba(255,215,0,0.8),
+    0 0 10px rgba(255,215,0,0.6);
+}
+
+.tier-S {
+  color: #ffb347;
+  text-shadow:
+    0 0 5px rgba(255,179,71,0.8),
+    0 0 10px rgba(255,179,71,0.6);
+}
+
+.tier-A {
+  color: #c084fc;
+  text-shadow:
+    0 0 5px rgba(192,132,252,0.8),
+    0 0 10px rgba(192,132,252,0.6);
+}
+
+.tier-B {
+  color: #60a5fa;
+  text-shadow:
+    0 0 5px rgba(96,165,250,0.8),
+    0 0 10px rgba(96,165,250,0.6);
+}
+
+.tier-C {
+  color: #67e8f9;
+  text-shadow:
+    0 0 5px rgba(103,232,249,0.8),
+    0 0 10px rgba(103,232,249,0.6);
+}
+
+/* POPUP */
+
+.popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.popup-content {
+  background: #1d1d35;
+  width: 650px;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255,204,102,0.35);
+}
+
+.close {
+  float: right;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.info-box {
+  background: #29294a;
+  padding: 15px;
+  border-radius: 14px;
+  margin: 15px 0;
+}
+
+.skill-box {
+  background: #151528;
+  border: 1px solid #333355;
+  border-radius: 16px;
+  padding: 18px;
+  margin-top: 18px;
+}
+
+.skill-category {
+  color: #ffcc66;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.skill-name {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.skill-description {
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.effect-box {
+  background: #29294a;
+  border-radius: 12px;
+  padding: 14px;
+  margin-top: 12px;
+}
+
+.effect-name {
+  color: #6ee7b7;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.effect-description {
+  line-height: 1.5;
+}
+.tierlist-popup {
+  width: 90vw;
+  max-width: 1100px;
+}
+
+.tierlist-image {
+  width: 100%;
+  border-radius: 14px;
+  margin-top: 15px;
+}
