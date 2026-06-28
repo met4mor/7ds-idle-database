@@ -9,7 +9,7 @@ const characters = [
   attribute: "STR",
   type: "Support",
 
-  recommendedPotential: "Full Accuracy",
+  recommendedPotential: "Full HP",
 
   skills: [
     {
@@ -7561,5 +7561,39 @@ closePvpTier.addEventListener("click", () => {
 pvpTierModal.addEventListener("click", (e) => {
   if (e.target === pvpTierModal) {
     pvpTierModal.classList.add("hidden");
+  }
+});
+const summonBtn = document.getElementById("summonBtn");
+const summonModal = document.getElementById("summonModal");
+const closeSummon = document.getElementById("closeSummon");
+
+summonBtn.addEventListener("click", () => {
+  summonModal.classList.remove("hidden");
+});
+
+closeSummon.addEventListener("click", () => {
+  summonModal.classList.add("hidden");
+});
+
+summonModal.addEventListener("click", (e) => {
+  if (e.target === summonModal) {
+    summonModal.classList.add("hidden");
+  }
+});
+const changelogBtn = document.getElementById("changelogBtn");
+const changelogModal = document.getElementById("changelogModal");
+const closeChangelog = document.getElementById("closeChangelog");
+
+changelogBtn.addEventListener("click", () => {
+  changelogModal.classList.remove("hidden");
+});
+
+closeChangelog.addEventListener("click", () => {
+  changelogModal.classList.add("hidden");
+});
+
+changelogModal.addEventListener("click", (e) => {
+  if (e.target === changelogModal) {
+    changelogModal.classList.add("hidden");
   }
 });
