@@ -15,9 +15,6 @@
 <body>
 
 <h1>Seven Deadly Sins: Idle Adventure Database</h1>
-<footer>
-  
-
 <div class="filters">
   <input id="searchInput" type="text" placeholder="Search character...">
 
@@ -53,7 +50,7 @@
   <option value="Goddess Warrior">Goddess Warrior</option>
   <option value="Guardians of Liones">Guardians of Liones</option>
   <option value="Guardians of the Forest">Guardians of the Forest</option>
-  <option value="Holy Warrior">Holy Warrior</option>
+<option value="Holy Warrior">Holy Warrior</option>
   <option value="Kingdom of Danafor">Kingdom of Danafor</option>
   <option value="Liones Holy Knight">Liones Holy Knight</option>
   <option value="Liones's Hero">Liones's Hero</option>
@@ -67,10 +64,10 @@
   <option value="Traces of the Demons">Traces of the Demons</option>
   <option value="Transcendent [Seven Deadly Sins]">Transcendent [Seven Deadly Sins]</option>
   <option value="Undead">Undead</option>
-  <option value="Unknown">Unknown</option>
+ <option value="Unknown">Unknown</option>
   <option value="Vaizel">Vaizel</option>
   <option value="Vampires of Edinburgh">Vampires of Edinburgh</option>
-  <option value="Walkers">Walkers</option>
+<option value="Walkers">Walkers</option>
   <option value="Werebeasts">Werebeasts</option>
   <option value="Weird Fangs">Weird Fangs</option>
 
@@ -96,8 +93,10 @@
 </select>
 
 <button id="aboutBtn">❓ About Project</button>
+<button id="changelogBtn">📜 Update Log</button>
 <button id="pveTierBtn">⚔️ PvE Tier List</button>
 <button id="pvpTierBtn">🏆 PvP Tier List</button>
+<button id="summonBtn">💎 Jenna: Pull or Skip?</button>
 
 </div>
 
@@ -111,7 +110,6 @@
 
     <div class="info-box">
       <p><b>Creator:</b> met4mor</p>
-      <p><b>Database Version:</b> 1.0</p>
     </div>
 
     <p>
@@ -142,6 +140,41 @@
       Seven Deadly Sins: Idle Adventure and all related assets belong to their respective owners.
     </p>
   </div>
+</div> 
+
+<div id="changelogModal" class="popup hidden">
+  <div class="popup-content">
+
+    <span class="close" id="closeChangelog">×</span>
+
+    <h2>📜 Database Update Log</h2>
+
+    <div class="info-box">
+      <p><b>Current Version:</b> 2.0</p>
+    </div>
+
+    <div class="skill-box">
+      <h3 class="skill-category">28/06/2026 v2.0</h3>
+
+      <ul>
+        <li>Added "Pull or Skip?" feature.</li>
+        <li>Added "Update Log" feature.</li>
+      </ul>
+    </div>
+  <div class="skill-box">
+      <h3 class="skill-category">27/06/2026 v1.0</h3>
+
+      <ul>
+        <li>Initial website release.</li>
+        <li>Added character database.</li>
+        <li>Added recommended potentials.</li>
+        <li>Added affiliation filters.</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
 </div>
 <div id="pveTierModal" class="popup hidden">
   <div class="popup-content tierlist-popup">
@@ -170,6 +203,48 @@
   </div>
 </div>
 
+<div id="summonModal" class="popup hidden">
+  <div class="popup-content">
+
+    <span class="close" id="closeSummon">×</span>
+
+    <h2><h2>💎 Jenna: Pull or Skip?</h2></h2>
+
+    <div class="info-box">
+      <p><b>Character:</b> Guardian of Dusk Jenna</p>
+      <p><b>Rating:</b> ⭐⭐⭐⭐⭐ MUST PULL</p>
+    </div>
+
+    <p>
+      Jenna is currently one of the best support characters in the game.
+    </p>
+
+    <h3>✅ Why summon?</h3>
+
+    <ul>
+      <li>Provides Energy</li>
+      <li>Reduces Cooldowns</li>
+      <li>Grants Debuff Immunity</li>
+      <li>Excellent survivability</li>
+      <li>Very future-proof support</li>
+    </ul>
+
+    <h3>❌ Skip if:</h3>
+
+    <ul>
+      <li>-</li>
+    </ul>
+
+    <div class="info-box">
+      <p>
+        <b>Final Verdict:</b><br>
+        Jenna is one of the safest investments currently available and is highly recommended for most players.
+      </p>
+    </div>
+
+  </div>
+</div>
+
 <div id="popup" class="popup hidden">
   <div class="popup-content">
     <span class="close" onclick="closePopup()">×</span>
@@ -186,7 +261,3 @@
     <div id="skillsContainer"></div>
   </div>
 </div>
-
-<script src="script.js"></script>
-</body>
-</html>
