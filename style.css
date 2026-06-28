@@ -29,7 +29,9 @@ select {
 
 #aboutBtn,
 #pveTierBtn,
-#pvpTierBtn {
+#pvpTierBtn,
+#summonBtn,
+#changelogBtn  {
   padding: 12px;
   border-radius: 10px;
   border: none;
@@ -45,7 +47,9 @@ select {
 
 #aboutBtn:hover,
 #pveTierBtn:hover,
-#pvpTierBtn:hover {
+#pvpTierBtn:hover,
+#summonBtn:hover,
+#changelogBtn {
   background: #f0f0f0;
 }
 
@@ -261,3 +265,4 @@ select {
   border-radius: 14px;
   margin-top: 15px;
 }
+
