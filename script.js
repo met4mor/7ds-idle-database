@@ -1,5 +1,54 @@
 const characters = [
 {
+  name: "Purgatory Meliodas",
+  icon: "https://i.imgur.com/hZf1IJC.png",
+  affiliation: "Purgatory",
+  grade: "Legendary",
+  attribute: "INT",
+  type: "DPS",
+  recommendedPotential: "Full Critical Damage",
+
+  skills: [
+    {
+      category: "Normal Skill",
+      name: "Slash",
+      description: "Deals damage equal to 450% of Attack to the target. Grants Extreme Fixation to allies upon successful attack.",
+      effect: {
+        name: "Extreme Fixation",
+        description: "Increases final Accuracy by 5%. (Stacks up to 15 times)"
+      }
+    },
+
+    {
+      category: "Special Skill",
+      name: "Chain Slash",
+      description: "Upon landing normal skill 7 time(s), deals damage equal to 732% of Attack to all enemies within 3m of the initial target over 5 hits. Deals additional damage equal to 2% of the target's Max HP each time this skill does damage. If the target is a Stage Boss, final damage is increased by 50% for every 1 debuff applied to the target upon attack."
+    },
+
+    {
+      category: "Passive",
+      name: "True Magic",
+      description: "Grants Shackles of Purgatory to self every 1s and inflicts Curse of Purgatory to all enemies every 3s.",
+      effects: [
+        {
+          name: "Shackles of Purgatory",
+          description: "Increases final Attack by 30% and Crit Damage by 25%. (Stacks up to 20 times)"
+        },
+        {
+          name: "Curse of Purgatory",
+          description: "Decreases Crit Resistance by 12% and increases final damage taken by 80%. (Stacks up to 7 times)"
+        }
+      ]
+    },
+
+    {
+      category: "Ultimate Move",
+      name: "Trillion Dark",
+      description: "Deals damage equal to 2118% of Attack to all enemies in a 4m × 8m area in front of self. Final damage is increased by 100% for every 1 Shackles of Purgatory buff applied to self upon attack. If the target is a Stage Boss, an additional 50% final damage is applied."
+    }
+  ]
+},
+{
   name: "Guardian of Dusk Jenna",
 
   icon: "https://i.imgur.com/L0y0FJm.png",
@@ -9,7 +58,7 @@ const characters = [
   attribute: "STR",
   type: "Support",
 
-  recommendedPotential: "Full Accuracy",
+  recommendedPotential: "Full HP",
 
   skills: [
     {
@@ -7479,16 +7528,25 @@ if (character.trait) {
       <h4 class="skill-name">"${skill.name}"</h4>
       <p class="skill-description">${skill.description}</p>
 
-      ${
-        skill.effect
-          ? `
-            <div class="effect-box">
-              <p class="effect-name">[${skill.effect.name}]</p>
-              <p class="effect-description">${skill.effect.description}</p>
-            </div>
-          `
-          : ""
-      }
+${
+  skill.effects
+    ? skill.effects
+        .map(effect => `
+          <div class="effect-box">
+            <p class="effect-name">[${effect.name}]</p>
+            <p class="effect-description">${effect.description}</p>
+          </div>
+        `)
+        .join("")
+    : skill.effect
+      ? `
+        <div class="effect-box">
+          <p class="effect-name">[${skill.effect.name}]</p>
+          <p class="effect-description">${skill.effect.description}</p>
+        </div>
+      `
+      : ""
+}
     `;
 
     skillsContainer.appendChild(skillBox);
