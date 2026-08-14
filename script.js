@@ -5448,7 +5448,7 @@ const characters = [
   attribute: "VIT",
   type: "DPS",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -5481,7 +5481,7 @@ const characters = [
   attribute: "STR",
   type: "Support",
 
-  recommendedPotential: "Full Critical Damage",
+   "-",
 
   skills: [
     {
@@ -5522,7 +5522,7 @@ const characters = [
   attribute: "STR",
   type: "Debuffer",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -5559,7 +5559,7 @@ const characters = [
   attribute: "STR",
   type: "DPS",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -5592,7 +5592,7 @@ const characters = [
   attribute: "STR",
   type: "Tank",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -5629,7 +5629,7 @@ const characters = [
   attribute: "DEX",
   type: "Support",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -5664,7 +5664,7 @@ const characters = [
   attribute: "DEX",
   type: "DPS",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -5705,7 +5705,7 @@ const characters = [
   attribute: "INT",
   type: "Tank",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -5746,7 +5746,7 @@ const characters = [
   attribute: "INT",
   type: "Support",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -5787,7 +5787,7 @@ const characters = [
   attribute: "VIT",
   type: "Support",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -5824,7 +5824,7 @@ const characters = [
   attribute: "DEX",
   type: "Tank",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -5865,7 +5865,7 @@ const characters = [
   attribute: "DEX",
   type: "Support",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -5906,7 +5906,7 @@ const characters = [
   attribute: "INT",
   type: "DPS",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -5947,7 +5947,7 @@ const characters = [
   attribute: "INT",
   type: "Debuffer",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -5988,7 +5988,7 @@ const characters = [
   attribute: "VIT",
   type: "Tank",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -6029,7 +6029,7 @@ const characters = [
   attribute: "VIT",
   type: "Debuffer",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -6070,7 +6070,7 @@ const characters = [
   attribute: "VIT",
   type: "Support",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -6111,7 +6111,7 @@ const characters = [
   attribute: "INT",
   type: "Support",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -6152,7 +6152,7 @@ const characters = [
   attribute: "STR",
   type: "Tank",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -6193,7 +6193,7 @@ const characters = [
   attribute: "VIT",
   type: "DPS",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -6234,7 +6234,7 @@ const characters = [
   attribute: "DEX",
   type: "Tank",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -6272,7 +6272,7 @@ const characters = [
   attribute: "STR",
   type: "Debuffer",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -6313,7 +6313,7 @@ const characters = [
   attribute: "VIT",
   type: "Debuffer",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -6354,7 +6354,7 @@ const characters = [
   attribute: "VIT",
   type: "Support",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -6395,7 +6395,7 @@ const characters = [
   attribute: "DEX",
   type: "Support",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -6436,7 +6436,7 @@ const characters = [
   attribute: "INT",
   type: "Tank",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -6477,7 +6477,7 @@ const characters = [
   attribute: "STR",
   type: "Support",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -6518,7 +6518,7 @@ const characters = [
   attribute: "STR",
   type: "Support",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -6559,7 +6559,7 @@ const characters = [
   attribute: "DEX",
   type: "DPS",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -6600,7 +6600,7 @@ const characters = [
   attribute: "DEX",
   type: "Debuffer",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -6641,7 +6641,7 @@ const characters = [
   attribute: "INT",
   type: "Support",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -6682,7 +6682,7 @@ const characters = [
   attribute: "STR",
   type: "Tank",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -6723,7 +6723,7 @@ const characters = [
   attribute: "INT",
   type: "Tank",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -6764,7 +6764,7 @@ const characters = [
   attribute: "INT",
   type: "Debuffer",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -6805,7 +6805,7 @@ const characters = [
   attribute: "INT",
   type: "Support",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -6846,7 +6846,7 @@ const characters = [
   attribute: "INT",
   type: "DPS",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -6887,7 +6887,7 @@ const characters = [
   attribute: "STR",
   type: "DPS",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -6928,7 +6928,7 @@ const characters = [
   attribute: "VIT",
   type: "Debuffer",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -6969,7 +6969,7 @@ const characters = [
   attribute: "VIT",
   type: "DPS",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -7010,7 +7010,7 @@ const characters = [
   attribute: "VIT",
   type: "Support",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -7051,7 +7051,7 @@ const characters = [
   attribute: "STR",
   type: "DPS",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -7092,7 +7092,7 @@ const characters = [
   attribute: "VIT",
   type: "Support",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -7133,7 +7133,7 @@ const characters = [
   attribute: "DEX",
   type: "Support",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -7174,7 +7174,7 @@ const characters = [
   attribute: "STR",
   type: "Support",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -7212,7 +7212,7 @@ const characters = [
   attribute: "STR",
   type: "Debuffer",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -7253,7 +7253,7 @@ const characters = [
   attribute: "VIT",
   type: "Tank",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: -",
 
   skills: [
     {
@@ -7294,7 +7294,7 @@ const characters = [
   attribute: "DEX",
   type: "Debuffer",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -7335,7 +7335,7 @@ const characters = [
   attribute: "STR",
   type: "Support",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -7376,7 +7376,7 @@ const characters = [
   attribute: "DEX",
   type: "Support",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -7414,7 +7414,7 @@ const characters = [
   attribute: "DEX",
   type: "DPS",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -7452,7 +7452,7 @@ const characters = [
   attribute: "DEX",
   type: "Tank",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
@@ -7493,7 +7493,7 @@ const characters = [
   attribute: "INT",
   type: "Support",
 
-  recommendedPotential: "Full Critical Damage",
+  recommendedPotential: "-",
 
   skills: [
     {
