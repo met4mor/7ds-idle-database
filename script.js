@@ -10,7 +10,13 @@ const characters = [
 
   trait: {
     name: "Power of the Apex",
-    description: "Grants Overwhelming Power to allies assigned to the team every 5s for 3s, and restores 10 Energy every 5s. [Overwhelming Power] Increases final Attack by 150%, increases final damage by 150%, and upon being hit, Critical Hit does not occur."
+    description: "Grants Overwhelming Power to allies assigned to the team every 5s for 3s, and restores 10 Energy every 5s.",
+    effects: [
+      {
+        name: "Overwhelming Power",
+        description: "Increases final Attack by 150%, increases final damage by 150%, and upon being hit, Critical Hit does not occur."
+      }
+    ]
   },
 
   skills: [
