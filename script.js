@@ -7615,7 +7615,7 @@ if (character.trait) {
     ${traitEffects}
   `;
 
-  document.querySelector("#popup .info-box").after(traitBox);
+ document.querySelector("#popup .info-box").after(traitBox);
 }
   
 
