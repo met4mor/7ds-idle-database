@@ -5481,7 +5481,7 @@ const characters = [
   attribute: "STR",
   type: "Support",
 
-   "-",
+recommendedPotential: "-",
 
   skills: [
     {
