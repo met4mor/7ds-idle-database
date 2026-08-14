@@ -1,5 +1,48 @@
 const characters = [
 {
+  name: "Lion Sin of Pride Escanor: Transcendent",
+  icon: "https://i.imgur.com/ymNiE2M.png",
+  affiliation: "Transcendent [Seven Deadly Sins]",
+  grade: "Transcendence",
+  attribute: "DEX",
+  type: "DPS",
+  recommendedPotential: "Full Critical Damage",
+
+  trait: {
+    name: "Power of the Apex",
+    description: "Grants Overwhelming Power to allies assigned to the team every 5s for 3s, and restores 10 Energy every 5s. [Overwhelming Power] Increases final Attack by 150%, increases final damage by 150%, and upon being hit, Critical Hit does not occur."
+  },
+
+  skills: [
+    {
+      category: "Normal Skill",
+      name: "Strike",
+      description: "Deals damage equal to 587% of Attack to the target. 50% chance to decrease cooldowns by 1s upon successful attack.",
+      effect: null
+    },
+
+    {
+      category: "Special Skill",
+      name: "Blazing Sun",
+      description: "Deals damage equal to 897% of Attack to all enemies within 3m of the initial target every 8 hits every 5s. Grants Sunshine to self each time this skill deals damage to an enemy.",
+      effect: {
+        name: "Sunshine",
+        description: "Increases final Attack by 7% and Attack Speed by 3%. (Stacks up to 75 times)"
+      }
+    },
+
+    {
+      category: "Ultimate Move",
+      name: "Punishment",
+      description: "Deals damage equal to 2717% of Attack to all enemies in a 4m x 8m area in front of self. Final damage is increased by 150% for every 1 Sunshine buff applied to self upon attack. Inflicts the target with Eternal Flame for 7s upon successful attack.",
+      effect: {
+        name: "Eternal Flame",
+        description: "Decreases final Defense by 20% and increases final damage taken by 150%, non-recoverable."
+      }
+    }
+  ]
+},
+  {
   name: "Oslo & Hawk",
   icon: "https://i.imgur.com/SkAx7oY.png",
   affiliation: "[Boar Hat] Tavern",
@@ -7547,13 +7590,32 @@ if (character.trait) {
   traitBox.id = "traitBox";
   traitBox.className = "skill-box";
 
+  const traitEffects = character.trait.effects
+    ? character.trait.effects
+        .map(effect => `
+          <div class="effect-box">
+            <p class="effect-name">[${effect.name}]</p>
+            <p class="effect-description">${effect.description}</p>
+          </div>
+        `)
+        .join("")
+    : character.trait.effect
+      ? `
+        <div class="effect-box">
+          <p class="effect-name">[${character.trait.effect.name}]</p>
+          <p class="effect-description">${character.trait.effect.description}</p>
+        </div>
+      `
+      : "";
+
   traitBox.innerHTML = `
     <h3 class="skill-category">Trait</h3>
     <h4 class="skill-name">"${character.trait.name}"</h4>
     <p class="skill-description">${character.trait.description}</p>
+    ${traitEffects}
   `;
 
-  document.querySelector(".info-box").after(traitBox);
+  document.querySelector("#popup .info-box").after(traitBox);
 }
   
 
