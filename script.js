@@ -7253,7 +7253,7 @@ recommendedPotential: "-",
   attribute: "VIT",
   type: "Tank",
 
-  recommendedPotential: -",
+  recommendedPotential: "-",
 
   skills: [
     {
