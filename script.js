@@ -1,5 +1,46 @@
 const characters = [
 {
+  name: "Oslo & Hawk",
+  icon: "https://i.imgur.com/SkAx7oY.png",
+  affiliation: "[Boar Hat] Tavern",
+  grade: "Legendary",
+  attribute: "VIT",
+  type: "Debuffer",
+  recommendedPotential: "Full Accuracy",
+
+  skills: [
+    {
+      category: "Normal Skill",
+      name: "Charge!",
+      description: "Deals damage equal to 730% of Attack to the target. Inflicts the target with Lv. 5 Blind for 1.5s upon attack.",
+      effect: {
+        name: "Lv. 5 Blind",
+        description: "Decreases final Accuracy by 20%"
+      }
+    },
+
+    {
+      category: "Special Skill",
+      name: "Fire the Catapult!",
+      description: "50% chance to deal damage equal to 964% of Attack to all enemies within 1.5m of the initial target. Lowers the target's Energy by 5 upon attack. Inflicts the target with Mark of the Wild for 5s upon successful attack.",
+      effect: {
+        name: "Mark of the Wild",
+        description: "Decreases final Attack by 30% and decreases final Defense by 30%"
+      }
+    },
+
+    {
+      category: "Ultimate Move",
+      name: "Charge Again?!",
+      description: "Deals damage equal to 2602% of Attack to all enemies in a 3m x 6m area in front of self. Final damage is increased by 300% for every 1 debuff(s) applied to the target upon attack. Inflicts the target with Prey for 7s upon successful attack.",
+      effect: {
+        name: "Prey",
+        description: "Decreases final Evasion by 25%, and increases final damage taken by 200%. (Increases final damage taken by 200% if in a barrier state.)"
+      }
+    }
+  ]
+},
+  {
   name: "Purgatory Meliodas",
   icon: "https://i.imgur.com/hZf1IJC.png",
   affiliation: "Purgatory",
