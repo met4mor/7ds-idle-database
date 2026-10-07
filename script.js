@@ -1,4 +1,83 @@
 const characters = [
+  {
+  name: "Advent of Tornado Sariel",
+  icon: "https://i.imgur.com/qoJbpiI.png",
+  affiliation: "Covenant of Light",
+  grade: "Legendary",
+  attribute: "DEX",
+  type: "Support",
+  recommendedPotential: "Full Accuracy",
+
+  skills: [
+    {
+      category: "Normal Skill",
+      name: "Strike",
+      description: "Deals damage equal to 568% of Attack to the target. 50% chance to remove 1 debuff(s) from allies upon attack.",
+      effect: null
+    },
+
+    {
+      category: "Special Skill",
+      name: "Wind Cross Slash",
+      description: "50% chance to deal damage equal to 1224% of Attack to all enemies in a 2m x 10m area in front of self. Final damage is increased by 100% for every 1 debuff(s) applied to the target and grants Heavenly Gale to allies for 3s upon attack. Restores 5 Energy upon successful attack.",
+      effect: {
+        name: "Heavenly Gale",
+        description: "Increases Attack Speed by 20%, and upon attack, ignores target's Evasion by 30%."
+      }
+    },
+
+    {
+      category: "Ultimate Move",
+      name: "Wind Explosion",
+      description: "Deals damage equal to 2985% of Attack to all enemies within 3m of the initial target. Grants Blessing of the Wind to allies for 5s and reduces the cooldowns of allies by 2s upon attack. Increases the target's cooldowns by 2s upon successful attack.",
+      effect: {
+        name: "Blessing of the Wind",
+        description: "Increases final Attack by 200%, and when HP is 50% or below, damage taken is fixed at 1 for 3s. (Limit once)"
+      }
+    }
+  ]
+},
+  {
+  name: "Mael of Sunshine",
+  icon: "https://i.imgur.com/gqfMRvq.png",
+  affiliation: "[The Four Archangels]",
+  grade: "Legendary",
+  attribute: "STR",
+  type: "DPS",
+  recommendedPotential: "Full Critical Damage",
+
+  skills: [
+    {
+      category: "Normal Skill",
+      name: "Pinpoint Strike",
+      description: "Deals damage equal to 585% of Attack to the target. Grants Plasma to self upon attack.",
+      effect: {
+        name: "Plasma",
+        description: "Increases final Attack by 80%, increases Crit Chance by 15%, and increases Crit Damage by 80%. (Stacks up to 10 times)"
+      }
+    },
+
+    {
+      category: "Special Skill",
+      name: "Solar Ray",
+      description: "Deals damage equal to 1000% of Attack to all enemies within 2m of the initial target over 3 hits every 5s. Inflicts targets hit with Flare each time this skill deals damage to an enemy. When Flare reaches max stacks, removes the effect and deals damage equal to 15% of the target's current HP.",
+      effect: {
+        name: "Flare",
+        description: "Decreases Crit Resistance by 15%, and increases final damage taken by 40%. (Stacks up to 5 times)"
+      }
+    },
+
+    {
+      category: "Ultimate Move",
+      name: "Rising Sun",
+      description: "Deals damage equal to 2918% of Attack to all enemies in a 3m x 10m area in front of self. Final damage dealt is increased by 500% for every 1 Plasma buff applied to self upon attack. Inflicts the target with Self Destruction for 7s upon successful attack.",
+      effect: {
+        name: "Self Destruction",
+        description: "Decreases Crit Defense by 300%, and increases final damage taken by 250%."
+      }
+    }
+  ]
+},
 {
   name: "Lion Sin of Pride Escanor: Transcendent",
   icon: "https://i.imgur.com/ymNiE2M.png",
