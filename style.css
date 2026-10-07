@@ -74,7 +74,15 @@ select {
   transform: scale(1.04);
 }
 
-
+.grade-Extreme {
+  border: 2px solid transparent;
+  background:
+    linear-gradient(#1d1d35, #1d1d35) padding-box,
+    linear-gradient(135deg, #ff3bbf, #ff72dc, #d946ef, #ff2fa8) border-box;
+  box-shadow:
+    0 0 18px rgba(255, 59, 191, 0.55),
+    0 0 8px rgba(217, 70, 239, 0.35);
+}
 
 .grade-Transcendence {
   border: 2px solid transparent;
