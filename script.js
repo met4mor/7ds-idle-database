@@ -1,5 +1,40 @@
 const characters = [
   {
+  name: "Zeldris: Emperor of Darkness [TEST]",
+  icon: "https://i.imgur.com/gqfMRvq.png",
+  affiliation: "[The Ten Commandments]",
+  grade: "Extreme",
+  attribute: "STR",
+  type: "DPS",
+  recommendedPotential: "Full Critical Damage",
+
+  skills: [
+    {
+      category: "Normal Skill",
+      name: "Test Attack",
+      description: "This is a temporary skill used to test the Extreme grade.",
+      effect: null
+    },
+
+    {
+      category: "Special Skill",
+      name: "Darkness",
+      description: "Temporary skill used for database testing.",
+      effect: {
+        name: "Extreme Power",
+        description: "Temporary effect used to test the Extreme character layout."
+      }
+    },
+
+    {
+      category: "Ultimate Move",
+      name: "Emperor of Darkness",
+      description: "Temporary Ultimate Move used to test the Extreme grade.",
+      effect: null
+    }
+  ]
+},
+  {
   name: "Advent of Tornado Sariel",
   icon: "https://i.imgur.com/qoJbpiI.png",
   affiliation: "Covenant of Light",
