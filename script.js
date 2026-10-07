@@ -7748,12 +7748,16 @@ function closePopup() {
 }
 
 searchInput.addEventListener("input", renderCharacters);
+searchInput.addEventListener("input", renderCharacters);
 attributeFilter.addEventListener("change", renderCharacters);
 typeFilter.addEventListener("change", renderCharacters);
 affiliationFilter.addEventListener("change", renderCharacters);
 document.getElementById("gradeFilter").addEventListener("change", renderCharacters);
 
 renderCharacters();
+
+
+// ABOUT PROJECT
 
 const aboutBtn = document.getElementById("aboutBtn");
 const aboutModal = document.getElementById("aboutModal");
@@ -7773,59 +7777,9 @@ aboutModal.addEventListener("click", (e) => {
   }
 });
 
-const pveTierBtn = document.getElementById("pveTierBtn");
-const pveTierModal = document.getElementById("pveTierModal");
-const closePveTier = document.getElementById("closePveTier");
 
-pveTierBtn.addEventListener("click", () => {
-  pveTierModal.classList.remove("hidden");
-});
+// UPDATE LOG
 
-closePveTier.addEventListener("click", () => {
-  pveTierModal.classList.add("hidden");
-});
-
-pveTierModal.addEventListener("click", (e) => {
-  if (e.target === pveTierModal) {
-    pveTierModal.classList.add("hidden");
-  }
-});
-
-
-const pvpTierBtn = document.getElementById("pvpTierBtn");
-const pvpTierModal = document.getElementById("pvpTierModal");
-const closePvpTier = document.getElementById("closePvpTier");
-
-pvpTierBtn.addEventListener("click", () => {
-  pvpTierModal.classList.remove("hidden");
-});
-
-closePvpTier.addEventListener("click", () => {
-  pvpTierModal.classList.add("hidden");
-});
-
-pvpTierModal.addEventListener("click", (e) => {
-  if (e.target === pvpTierModal) {
-    pvpTierModal.classList.add("hidden");
-  }
-});
-const summonBtn = document.getElementById("summonBtn");
-const summonModal = document.getElementById("summonModal");
-const closeSummon = document.getElementById("closeSummon");
-
-summonBtn.addEventListener("click", () => {
-  summonModal.classList.remove("hidden");
-});
-
-closeSummon.addEventListener("click", () => {
-  summonModal.classList.add("hidden");
-});
-
-summonModal.addEventListener("click", (e) => {
-  if (e.target === summonModal) {
-    summonModal.classList.add("hidden");
-  }
-});
 const changelogBtn = document.getElementById("changelogBtn");
 const changelogModal = document.getElementById("changelogModal");
 const closeChangelog = document.getElementById("closeChangelog");
