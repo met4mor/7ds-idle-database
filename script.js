@@ -227,7 +227,7 @@ const characters = [
   attribute: "STR",
   type: "Support",
 
-  recommendedPotential: "Full HP",
+  recommendedPotential: "Full Accuracy",
 
   skills: [
     {
@@ -3799,7 +3799,7 @@ const characters = [
   attribute: "STR",
   type: "Support",
 
-  recommendedPotential: "Full HP",
+  recommendedPotential: "Full Accuracy",
 
   skills: [
     {
