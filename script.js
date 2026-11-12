@@ -1,4 +1,66 @@
 const characters = [
+  
+{
+  name: '"Ultimate" Escanor',
+  icon: "https://i.imgur.com/gf2jHJ2.png",
+  affiliation: "One Who Stands at the Pinnacle",
+  grade: "Legendary",
+  attribute: "VIT",
+  type: "DPS",
+  recommendedPotential: "INSERISCI_POTENZIALE",
+
+  skills: [
+    {
+      category: "Normal Skill",
+      name: "Heavy Blow",
+      description: "Deals damage equal to 587% of Attack to the target. Inflicts the target with Lv. 5 Resistance Down Debuff for 2s upon attack. 50% chance to remove 1 buff(s) from the target upon successful attack.",
+      effect: {
+        name: "Lv. 5 Resistance Down",
+        description: "Decreases Crit Resistance by 22%."
+      }
+    },
+    {
+      category: "Special Skill",
+      name: "Burning Spear",
+      description: "Upon being hit 5 time(s), deals damage equal to 1036% of Attack to all enemies within 3m of the initial target. Grants Resolve of Devotion buff to allies upon attack. Inflicts targets hit with Sun's Punishment Debuff for 3s upon successful attack.",
+      effects: [
+        {
+          name: "Resolve of Devotion",
+          description: "Increases final Attack by 100%, increases Crit Resistance by 50%, increases Crit Defense by 100%. (Stacks up to 5 times)"
+        },
+        {
+          name: "Sun's Punishment",
+          description: "Deals damage equal to 3% of the target's Max HP every 1s, increases final damage taken by 300%."
+        }
+      ]
+    },
+    {
+      category: "Special Skill 2",
+      name: "Final Flame",
+      description: "Grants Life-Bound Oath buff to self, and the first 1 time(s) this hero suffers a fatal blow, grants Immortality to self for 10s.",
+      effects: [
+        {
+          name: "Life-Bound Oath",
+          description: "Decreases caster's HP by 5% of Max HP every 1s. (Counts as being Hit), increases Final Attack by 20% every 1s. (Stacks up to 30 time(s))"
+        },
+        {
+          name: "Immortality",
+          description: "Cannot die for the duration of the effect."
+        }
+      ]
+    },
+    {
+      category: "Ultimate Move",
+      name: "Crazy Prominence",
+      description: "Deals damage equal to 3115% of Attack to all enemies in a 4m x 5m area in front of self. Final damage is increased by 50% for every 1 buff(s) applied to self, and debuff(s) applied to the target upon attack. Grants Scorching Sun buff to self for 5s upon successful attack.",
+      effect: {
+        name: "Scorching Sun",
+        description: "Final damage is increased by 10% for every 1% of the caster's diminished HP and by 50% for each 1 allied hero that suffered a fatal blow."
+      }
+    }
+  ]
+},
+
 {
   name: "Advent of Tornado Sariel",
   icon: "https://i.imgur.com/qoJbpiI.png",
