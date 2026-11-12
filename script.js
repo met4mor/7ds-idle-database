@@ -7,7 +7,7 @@ const characters = [
   grade: "Legendary",
   attribute: "VIT",
   type: "DPS",
-  recommendedPotential: "INSERISCI_POTENZIALE",
+  recommendedPotential: "Full Critical Damage",
 
   skills: [
     {
